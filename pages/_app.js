@@ -8,11 +8,11 @@ import Layout from '../components/Layout'
 function MyApp({ Component, pageProps }) {
   NProgress.configure({ showSpinner: false })
 
-  Router.events.on('routerChangeStart', () => {
+  Router.events.on('routeChangeStart', () => {
     NProgress.start()
   })
 
-  Router.events.on('routerChangeComplete', () => {
+  Router.events.on('routeChangeComplete', () => {
     NProgress.done()
   })
 
